@@ -92,7 +92,7 @@ class MyHomePage extends StatelessWidget {
                         ),
                         SizedBox(width: 10),
                         Column(
-                          children: [Text("เบอร์โทรศัพท์"), Text("0649140879")],
+                          children: [Text("เบอร์โทร"), Text("0649140879")],
                         ),
                       ],
                     ),
