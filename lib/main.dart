@@ -79,10 +79,19 @@ class MyHomePage extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("ข้อมูลส่วนตัว"),
+                    Text(
+                      "ข้อมูลส่วนตัว",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 18,
+                      ),
+                    ),
+
+                    SizedBox(height: 15),
                     Row(
                       children: [
                         Container(
+                          margin: EdgeInsets.only(left: 10),
                           padding: EdgeInsets.all(10),
                           decoration: BoxDecoration(
                             color: Colors.green[100],
@@ -92,14 +101,15 @@ class MyHomePage extends StatelessWidget {
                         ),
                         SizedBox(width: 10),
                         Column(
-                          children: [Text("เบอร์โทร"), Text("0649140879")],
+                          children: [Text("เบอร์โทรศัทพ์"), Text("0649140879")],
                         ),
                       ],
                     ),
-
+                    SizedBox(height: 15),
                     Row(
                       children: [
                         Container(
+                          margin: EdgeInsets.only(left: 10),
                           padding: EdgeInsets.all(10),
                           decoration: BoxDecoration(
                             color: Colors.pink[100],
@@ -109,14 +119,16 @@ class MyHomePage extends StatelessWidget {
                         ),
                         SizedBox(width: 10),
                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [Text("วันเกิด"), Text("14 กันยายน 2548")],
                         ),
                       ],
                     ),
-
+                    SizedBox(height: 15),
                     Row(
                       children: [
                         Container(
+                          margin: EdgeInsets.only(left: 10),
                           padding: EdgeInsets.all(10),
                           decoration: BoxDecoration(
                             color: Colors.orange[100],
@@ -126,14 +138,16 @@ class MyHomePage extends StatelessWidget {
                         ),
                         SizedBox(width: 10),
                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [Text("ที่อยู่"), Text("ชลบุรี")],
                         ),
                       ],
                     ),
-
+                    SizedBox(height: 15),
                     Row(
                       children: [
                         Container(
+                          margin: EdgeInsets.only(left: 10),
                           padding: EdgeInsets.all(10),
                           decoration: BoxDecoration(
                             color: Colors.purple[100],
@@ -143,24 +157,27 @@ class MyHomePage extends StatelessWidget {
                         ),
                         SizedBox(width: 10),
                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [Text("การศึกษา"), Text("วิทยาลัยเทคโนโลยีภาคตะวันออก(อีเทค)")],
                         ),
                       ],
                     ),
-
-                    ElevatedButton(
+                    SizedBox(height: 15),
+                    Center(
+                    child:ElevatedButton(
                       onPressed: () => Navigator.pushNamed(context, '/Second'),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.orange,
                         foregroundColor: Colors.white,
                         padding: EdgeInsets.symmetric(horizontal: 20,vertical: 10),
                         shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(8),
+                            borderRadius: BorderRadius.circular(20),
                         ),
                         elevation: 1,
                       ),
                       child: Text(" Go to Second"),
                     ),
+                  ),
                   ],
 
                 ),
