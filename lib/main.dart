@@ -198,14 +198,14 @@ class SecondPage extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(16.0), // เว้นขอบจอนิดหน่อย
+          padding: const EdgeInsets.all(16.0),
           child: Column(
             children: [
-              // ส่วนหัว: รูปโปรไฟล์ + ตัวเลขสถิติ
+
               Row(
-                mainAxisAlignment: MainAxisAlignment.start, // เริ่มจากซ้าย
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  // 1. รูปโปรไฟล์ (อยู่ซ้ายสุด)
+
                   ClipOval(
                     child: Image.network(
                       "https://thethaiger.com/th/wp-content/uploads/2022/10/%E0%B8%9E%E0%B8%A3%E0%B8%B5%E0%B9%88%E0%B8%84%E0%B8%B2%E0%B8%8B%E0%B8%B6%E0%B8%A2%E0%B8%B0-%E0%B8%AD%E0%B8%AD%E0%B8%81%E0%B8%81%E0%B8%B3%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A2-1.jpg",
@@ -215,18 +215,14 @@ class SecondPage extends StatelessWidget {
                     ),
                   ),
 
-                  SizedBox(width: 20), // เว้นระยะห่างระหว่างรูปกับตัวเลข
+                  SizedBox(width: 20),
 
-                  // 2. ส่วนข้อมูลตัวเลข (กินพื้นที่ด้านขวาที่เหลือทั้งหมด)
                   Expanded(
                     child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround, // กระจายระยะห่างเท่าๆ กัน
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
-                        // ก้อนที่ 1: กำลังติดตาม
                         _buildStatColumn("40", "กำลังติดตาม"),
-                        // ก้อนที่ 2: ผู้ติดตาม
                         _buildStatColumn("828.1 K", "ผู้ติดตาม"),
-                        // ก้อนที่ 3: ถูกใจ
                         _buildStatColumn("329.9 K", "ถูกใจ"),
                       ],
                     ),
@@ -270,7 +266,6 @@ class SecondPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  // ปุ่มติดตาม
                   Expanded(
                     child: Container(
                       padding: EdgeInsets.symmetric(horizontal: 20),
@@ -296,7 +291,6 @@ class SecondPage extends StatelessWidget {
                     ),
                   ),
 
-                  // ไอคอนแชร์
                   Container(
                     margin: EdgeInsets.only(right: 20),
                     child: Icon(
@@ -312,7 +306,6 @@ class SecondPage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  // รูป 1
                   ClipRRect(
                     borderRadius: BorderRadius.circular(10),
                     child: Image.network(
@@ -323,7 +316,6 @@ class SecondPage extends StatelessWidget {
                     ),
                   ),
 
-                  // รูป 2
                   ClipRRect(
                     borderRadius: BorderRadius.circular(10),
                     child: Image.network(
